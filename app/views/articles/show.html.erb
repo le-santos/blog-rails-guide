@@ -9,3 +9,13 @@
             data: { confirm: 'Delete this article?'}%><br>
 
 <%= link_to 'Back to Home', :root %>
+
+<h2>Comments</h2>
+<% #render @article.comments %>
+
+<h3>All comments:</h3>
+<%= render @article.comments %>
+
+<h3>Add a comment:</h3>
+<%= render 'comments/form' %>
+
