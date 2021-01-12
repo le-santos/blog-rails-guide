@@ -1,0 +1,14 @@
+<h1> Hello, ruby </h1>
+
+<h2>Create new articles</h2>
+<a><%= link_to 'New Article', new_article_path %></a>
+
+<h2>List of articles</h2>
+
+<ul>
+  <% @articles.each do |article| %>
+    <li>
+      <%= link_to article.title, article %>
+    </li>
+  <% end %>
+</ul>
